@@ -1,0 +1,26 @@
+{% set showcase = type %}
+{% set subTitle = 'Sub Titulo' %}
+
+{% if showcase == 'top_seller' %} 
+{% set subTitle = 'Os favoritos da galera' %}
+
+
+{% elseif showcase == 'new'  %}
+{% set subTitle = '' %}
+
+
+{% elseif showcase == 'featured'  %}
+{% set subTitle = 'Os mais cobiçados estão aqui' %}
+
+
+{% elseif showcase == 'free_shipping'  %}
+{% set subTitle = '' %}
+
+
+{% elseif showcase == 'promotion'  %}
+{% set subTitle = '' %}
+
+
+
+{% endif %}
+{{ subTitle }}
